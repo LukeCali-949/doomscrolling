@@ -45,37 +45,37 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.12 0.03 280);
-  --foreground: oklch(0.98 0.02 90);
-  --card: oklch(0.18 0.05 280);
-  --card-foreground: oklch(0.98 0.02 90);
-  --popover: oklch(0.18 0.05 280);
-  --popover-foreground: oklch(0.98 0.02 90);
-  --primary: oklch(0.82 0.2 20);
-  --primary-foreground: oklch(0.12 0.03 280);
-  --secondary: oklch(0.24 0.07 300);
-  --secondary-foreground: oklch(0.98 0.02 90);
-  --muted: oklch(0.24 0.03 260);
-  --muted-foreground: oklch(0.84 0.03 120);
-  --accent: oklch(0.78 0.17 150);
-  --accent-foreground: oklch(0.12 0.03 280);
+  --background: oklch(0.12 0.04 330);
+  --foreground: oklch(0.98 0.02 25);
+  --card: oklch(0.18 0.06 330);
+  --card-foreground: oklch(0.98 0.02 25);
+  --popover: oklch(0.18 0.06 330);
+  --popover-foreground: oklch(0.98 0.02 25);
+  --primary: oklch(0.8 0.22 350);
+  --primary-foreground: oklch(0.12 0.04 330);
+  --secondary: oklch(0.24 0.08 335);
+  --secondary-foreground: oklch(0.98 0.02 25);
+  --muted: oklch(0.24 0.04 330);
+  --muted-foreground: oklch(0.86 0.03 20);
+  --accent: oklch(0.79 0.18 352);
+  --accent-foreground: oklch(0.12 0.04 330);
   --destructive: oklch(0.7 0.23 25);
-  --border: oklch(0.45 0.08 280 / 35%);
-  --input: oklch(0.45 0.08 280 / 45%);
-  --ring: oklch(0.82 0.18 190);
-  --chart-1: oklch(0.78 0.2 25);
-  --chart-2: oklch(0.82 0.18 75);
-  --chart-3: oklch(0.8 0.16 145);
-  --chart-4: oklch(0.75 0.18 220);
-  --chart-5: oklch(0.79 0.2 315);
-  --sidebar: oklch(0.16 0.04 280);
-  --sidebar-foreground: oklch(0.98 0.02 90);
-  --sidebar-primary: oklch(0.82 0.2 20);
-  --sidebar-primary-foreground: oklch(0.12 0.03 280);
-  --sidebar-accent: oklch(0.24 0.07 300);
-  --sidebar-accent-foreground: oklch(0.98 0.02 90);
-  --sidebar-border: oklch(0.45 0.08 280 / 35%);
-  --sidebar-ring: oklch(0.82 0.18 190);
+  --border: oklch(0.45 0.1 335 / 35%);
+  --input: oklch(0.45 0.1 335 / 45%);
+  --ring: oklch(0.82 0.2 348);
+  --chart-1: oklch(0.78 0.2 350);
+  --chart-2: oklch(0.82 0.18 18);
+  --chart-3: oklch(0.8 0.16 330);
+  --chart-4: oklch(0.75 0.18 345);
+  --chart-5: oklch(0.79 0.2 355);
+  --sidebar: oklch(0.16 0.05 330);
+  --sidebar-foreground: oklch(0.98 0.02 25);
+  --sidebar-primary: oklch(0.8 0.22 350);
+  --sidebar-primary-foreground: oklch(0.12 0.04 330);
+  --sidebar-accent: oklch(0.24 0.08 335);
+  --sidebar-accent-foreground: oklch(0.98 0.02 25);
+  --sidebar-border: oklch(0.45 0.1 335 / 35%);
+  --sidebar-ring: oklch(0.82 0.2 348);
 }
 
 .dark {
@@ -119,10 +119,10 @@
   body {
     @apply bg-background text-foreground;
     background-image:
-      radial-gradient(circle at top left, rgba(255, 77, 77, 0.22), transparent 30%),
-      radial-gradient(circle at top right, rgba(255, 159, 28, 0.22), transparent 28%),
-      radial-gradient(circle at center, rgba(56, 189, 248, 0.16), transparent 34%),
-      linear-gradient(135deg, #120a24 0%, #1b1036 35%, #10182f 65%, #1b0f28 100%);
+      radial-gradient(circle at top left, rgba(244, 114, 182, 0.26), transparent 30%),
+      radial-gradient(circle at top right, rgba(236, 72, 153, 0.2), transparent 28%),
+      radial-gradient(circle at center, rgba(251, 191, 36, 0.1), transparent 34%),
+      linear-gradient(135deg, #160716 0%, #250b26 34%, #180820 66%, #09030a 100%);
     background-attachment: fixed;
   }
 }
@@ -130,13 +130,12 @@
 .rainbow-text {
   background: linear-gradient(
     90deg,
-    #ff4d4d 0%,
-    #ff9f1c 16%,
-    #ffe066 32%,
-    #4ade80 50%,
-    #38bdf8 68%,
-    #818cf8 84%,
-    #f472b6 100%
+    #fda4af 0%,
+    #fb7185 18%,
+    #f472b6 40%,
+    #ec4899 62%,
+    #db2777 82%,
+    #f9a8d4 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -156,13 +155,12 @@
   border-radius: inherit;
   background: linear-gradient(
     90deg,
-    #ff4d4d,
-    #ff9f1c,
-    #ffe066,
-    #4ade80,
-    #38bdf8,
-    #818cf8,
-    #f472b6
+    #f9a8d4,
+    #fb7185,
+    #f472b6,
+    #ec4899,
+    #db2777,
+    #fda4af
   );
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -176,12 +174,11 @@
 .rainbow-surface {
   background: linear-gradient(
     135deg,
-    rgba(255, 77, 77, 0.18),
-    rgba(255, 159, 28, 0.16),
-    rgba(255, 224, 102, 0.14),
-    rgba(74, 222, 128, 0.16),
-    rgba(56, 189, 248, 0.18),
-    rgba(129, 140, 248, 0.16),
-    rgba(244, 114, 182, 0.18)
+    rgba(253, 164, 175, 0.2),
+    rgba(251, 113, 133, 0.18),
+    rgba(244, 114, 182, 0.16),
+    rgba(236, 72, 153, 0.16),
+    rgba(219, 39, 119, 0.2),
+    rgba(251, 207, 232, 0.18)
   );
 }

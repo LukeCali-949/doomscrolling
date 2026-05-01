@@ -16,7 +16,7 @@ export default function Home() {
               Learn how doomscrolling affects your mental health and discover simple ways to take back control.
             </p>
             <div className="animate-bounce mt-8">
-              <ArrowDown className="h-8 w-8 text-cyan-300 mx-auto drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]" />
+              <ArrowDown className="h-8 w-8 text-pink-300 mx-auto drop-shadow-[0_0_12px_rgba(244,114,182,0.8)]" />
             </div>
           </div>
         </div>
@@ -28,14 +28,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 rainbow-text">
               Doomscrolling by the Numbers
             </h2>
-            <div className="h-1 w-24 mx-auto rounded-full bg-gradient-to-r from-red-400 via-yellow-300 to-cyan-300 shadow-[0_0_16px_rgba(255,224,102,0.55)]" />
+            <div className="h-1 w-24 mx-auto rounded-full bg-gradient-to-r from-pink-400 via-fuchsia-300 to-rose-300 shadow-[0_0_16px_rgba(244,114,182,0.55)]" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(255,77,77,0.16)] backdrop-blur-md">
+            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(244,114,182,0.16)] backdrop-blur-md">
               <CardContent className="p-8">
                 <div className="flex items-start">
-                  <div className="bg-gradient-to-br from-red-400 via-orange-400 to-yellow-300 p-4 rounded-full mr-5 shadow-[0_0_20px_rgba(255,159,28,0.45)]">
+                  <div className="bg-gradient-to-br from-pink-400 via-fuchsia-400 to-rose-300 p-4 rounded-full mr-5 shadow-[0_0_20px_rgba(244,114,182,0.45)]">
                     <Clock className="h-8 w-8 text-slate-950" />
                   </div>
                   <div>
@@ -48,7 +48,7 @@ export default function Home() {
                       Source:{" "}
                       <a
                         href="https://explodingtopics.com/blog/screen-time-stats"
-                        className="underline text-orange-300"
+                        className="underline text-pink-300"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -60,10 +60,10 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(56,189,248,0.16)] backdrop-blur-md">
+            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(244,114,182,0.16)] backdrop-blur-md">
               <CardContent className="p-8">
                 <div className="flex items-start">
-                  <div className="bg-gradient-to-br from-cyan-400 via-sky-400 to-blue-500 p-4 rounded-full mr-5 shadow-[0_0_20px_rgba(56,189,248,0.45)]">
+                  <div className="bg-gradient-to-br from-fuchsia-400 via-pink-400 to-rose-400 p-4 rounded-full mr-5 shadow-[0_0_20px_rgba(244,114,182,0.45)]">
                     <Brain className="h-8 w-8 text-slate-950" />
                   </div>
                   <div>
@@ -76,7 +76,7 @@ export default function Home() {
                       Source:{" "}
                       <a
                         href="https://www.health.harvard.edu/mind-and-mood/doomscrolling-dangers"
-                        className="underline text-cyan-300"
+                        className="underline text-fuchsia-300"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -118,10 +118,10 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 rainbow-text">
               Why Is It So Addictive?
             </h2>
-            <div className="h-1 w-24 mx-auto rounded-full bg-gradient-to-r from-fuchsia-400 via-yellow-300 to-emerald-300 shadow-[0_0_16px_rgba(244,114,182,0.55)]" />
+            <div className="h-1 w-24 mx-auto rounded-full bg-gradient-to-r from-pink-400 via-fuchsia-300 to-rose-300 shadow-[0_0_16px_rgba(244,114,182,0.55)]" />
           </div>
 
-          <div className="rainbow-border bg-slate-950/70 rounded-2xl shadow-[0_0_40px_rgba(129,140,248,0.15)] overflow-hidden backdrop-blur-md">
+          <div className="rainbow-border bg-slate-950/70 rounded-2xl shadow-[0_0_40px_rgba(244,114,182,0.15)] overflow-hidden backdrop-blur-md">
             <div className="p-8 md:p-10">
               <p className="text-xl text-center text-slate-200 mb-10">
                 Social platforms are designed to keep you hooked. Infinite scrolling, algorithmic feeds, and emotionally
@@ -129,35 +129,35 @@ export default function Home() {
               </p>
 
               <div className="grid md:grid-cols-4 gap-6">
-                <div className="bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-xl p-6 text-center border border-white/10">
-                  <div className="bg-gradient-to-br from-red-400 to-orange-400 text-slate-950 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-[0_0_18px_rgba(255,77,77,0.4)]">
+                <div className="bg-gradient-to-br from-pink-500/20 to-rose-500/20 rounded-xl p-6 text-center border border-white/10">
+                  <div className="bg-gradient-to-br from-pink-400 to-rose-400 text-slate-950 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-[0_0_18px_rgba(244,114,182,0.4)]">
                     🔔
                   </div>
-                  <h3 className="font-bold text-lg mb-2 text-red-200">Trigger</h3>
+                  <h3 className="font-bold text-lg mb-2 text-pink-200">Trigger</h3>
                   <p className="text-slate-200">Boredom or a notification prompts you to check your phone</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-500/20 to-yellow-500/20 rounded-xl p-6 text-center border border-white/10">
-                  <div className="bg-gradient-to-br from-orange-400 to-yellow-300 text-slate-950 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-[0_0_18px_rgba(255,159,28,0.4)]">
+                <div className="bg-gradient-to-br from-rose-500/20 to-pink-500/20 rounded-xl p-6 text-center border border-white/10">
+                  <div className="bg-gradient-to-br from-rose-400 to-pink-300 text-slate-950 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-[0_0_18px_rgba(236,72,153,0.4)]">
                     📱
                   </div>
-                  <h3 className="font-bold text-lg mb-2 text-orange-200">Action</h3>
+                  <h3 className="font-bold text-lg mb-2 text-rose-200">Action</h3>
                   <p className="text-slate-200">You open TikTok, Instagram, or another social app</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-xl p-6 text-center border border-white/10">
-                  <div className="bg-gradient-to-br from-emerald-300 to-cyan-300 text-slate-950 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-[0_0_18px_rgba(74,222,128,0.4)]">
+                <div className="bg-gradient-to-br from-fuchsia-500/20 to-pink-500/20 rounded-xl p-6 text-center border border-white/10">
+                  <div className="bg-gradient-to-br from-fuchsia-300 to-pink-300 text-slate-950 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-[0_0_18px_rgba(244,114,182,0.4)]">
                     🎉
                   </div>
-                  <h3 className="font-bold text-lg mb-2 text-emerald-200">Reward</h3>
+                  <h3 className="font-bold text-lg mb-2 text-fuchsia-200">Reward</h3>
                   <p className="text-slate-200">You see something exciting, emotional, or shocking</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-blue-500/20 to-violet-500/20 rounded-xl p-6 text-center border border-white/10">
-                  <div className="bg-gradient-to-br from-sky-300 to-violet-300 text-slate-950 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-[0_0_18px_rgba(56,189,248,0.4)]">
+                <div className="bg-gradient-to-br from-rose-500/20 to-fuchsia-500/20 rounded-xl p-6 text-center border border-white/10">
+                  <div className="bg-gradient-to-br from-rose-300 to-fuchsia-300 text-slate-950 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-[0_0_18px_rgba(244,114,182,0.4)]">
                     🔁
                   </div>
-                  <h3 className="font-bold text-lg mb-2 text-sky-200">Repeat</h3>
+                  <h3 className="font-bold text-lg mb-2 text-rose-200">Repeat</h3>
                   <p className="text-slate-200">Your brain wants more, and the cycle continues</p>
                 </div>
               </div>
@@ -178,18 +178,18 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 rainbow-text">
               How to Break the Cycle
             </h2>
-            <div className="h-1 w-24 mx-auto rounded-full bg-gradient-to-r from-red-400 via-emerald-300 to-cyan-300 shadow-[0_0_16px_rgba(74,222,128,0.5)]" />
+            <div className="h-1 w-24 mx-auto rounded-full bg-gradient-to-r from-pink-400 via-fuchsia-300 to-rose-300 shadow-[0_0_16px_rgba(244,114,182,0.5)]" />
             <p className="text-xl text-slate-200 mt-6 max-w-2xl mx-auto">
               Practical strategies to regain control of your digital life and improve your mental wellbeing
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(255,77,77,0.16)] hover:shadow-[0_0_36px_rgba(255,77,77,0.25)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
-              <div className="h-1 bg-gradient-to-r from-red-400 via-orange-300 to-yellow-300 opacity-80" />
+            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(244,114,182,0.16)] hover:shadow-[0_0_36px_rgba(244,114,182,0.25)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
+              <div className="h-1 bg-gradient-to-r from-pink-400 via-fuchsia-300 to-rose-300 opacity-80" />
               <CardContent className="p-8">
                 <div className="flex items-start">
-                  <div className="bg-gradient-to-br from-red-400 to-orange-400 text-slate-950 w-12 h-12 rounded-full flex items-center justify-center mr-5 font-bold text-xl shrink-0 shadow-[0_0_14px_rgba(255,77,77,0.35)]">
+                  <div className="bg-gradient-to-br from-pink-400 to-rose-400 text-slate-950 w-12 h-12 rounded-full flex items-center justify-center mr-5 font-bold text-xl shrink-0 shadow-[0_0_14px_rgba(244,114,182,0.35)]">
                     1
                   </div>
                   <div>
@@ -200,15 +200,15 @@ export default function Home() {
                     </p>
                     <ul className="space-y-2 text-slate-200">
                       <li className="flex items-center">
-                        <Activity className="h-4 w-4 text-red-300 mr-2" />
+                        <Activity className="h-4 w-4 text-pink-300 mr-2" />
                         <span>Set app time limits in your phone settings</span>
                       </li>
                       <li className="flex items-center">
-                        <Activity className="h-4 w-4 text-orange-300 mr-2" />
+                        <Activity className="h-4 w-4 text-fuchsia-300 mr-2" />
                         <span>Use "Do Not Disturb" mode during focused work</span>
                       </li>
                       <li className="flex items-center">
-                        <Activity className="h-4 w-4 text-yellow-300 mr-2" />
+                        <Activity className="h-4 w-4 text-rose-300 mr-2" />
                         <span>Keep your phone out of reach during meals</span>
                       </li>
                     </ul>
@@ -217,11 +217,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(56,189,248,0.16)] hover:shadow-[0_0_36px_rgba(56,189,248,0.25)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
-              <div className="h-1 bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400 opacity-80" />
+            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(244,114,182,0.16)] hover:shadow-[0_0_36px_rgba(244,114,182,0.25)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
+              <div className="h-1 bg-gradient-to-r from-fuchsia-400 via-pink-300 to-rose-400 opacity-80" />
               <CardContent className="p-8">
                 <div className="flex items-start">
-                  <div className="bg-gradient-to-br from-cyan-300 to-sky-400 text-slate-950 w-12 h-12 rounded-full flex items-center justify-center mr-5 font-bold text-xl shrink-0 shadow-[0_0_14px_rgba(56,189,248,0.35)]">
+                  <div className="bg-gradient-to-br from-fuchsia-300 to-pink-400 text-slate-950 w-12 h-12 rounded-full flex items-center justify-center mr-5 font-bold text-xl shrink-0 shadow-[0_0_14px_rgba(244,114,182,0.35)]">
                     2
                   </div>
                   <div>
@@ -232,15 +232,15 @@ export default function Home() {
                     </p>
                     <ul className="space-y-2 text-slate-200">
                       <li className="flex items-center">
-                        <Coffee className="h-4 w-4 text-cyan-300 mr-2" />
+                        <Coffee className="h-4 w-4 text-pink-300 mr-2" />
                         <span>Read a physical book instead of social media</span>
                       </li>
                       <li className="flex items-center">
-                        <Coffee className="h-4 w-4 text-sky-300 mr-2" />
+                        <Coffee className="h-4 w-4 text-fuchsia-300 mr-2" />
                         <span>Take a 10-minute walk when you feel the urge to scroll</span>
                       </li>
                       <li className="flex items-center">
-                        <Coffee className="h-4 w-4 text-blue-300 mr-2" />
+                        <Coffee className="h-4 w-4 text-rose-300 mr-2" />
                         <span>Practice 5 minutes of mindfulness when bored</span>
                       </li>
                     </ul>
@@ -251,11 +251,11 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mt-8">
-            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(74,222,128,0.16)] hover:shadow-[0_0_36px_rgba(74,222,128,0.25)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
-              <div className="h-1 bg-gradient-to-r from-emerald-400 via-lime-300 to-yellow-300 opacity-80" />
+            <Card className="rainbow-border overflow-hidden border-0 bg-slate-950/70 shadow-[0_0_30px_rgba(244,114,182,0.16)] hover:shadow-[0_0_36px_rgba(244,114,182,0.25)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
+              <div className="h-1 bg-gradient-to-r from-pink-400 via-rose-300 to-fuchsia-300 opacity-80" />
               <CardContent className="p-8">
                 <div className="flex items-start">
-                  <div className="bg-gradient-to-br from-emerald-300 to-lime-300 text-slate-950 w-12 h-12 rounded-full flex items-center justify-center mr-5 font-bold text-xl shrink-0 shadow-[0_0_14px_rgba(74,222,128,0.35)]">
+                  <div className="bg-gradient-to-br from-pink-300 to-rose-300 text-slate-950 w-12 h-12 rounded-full flex items-center justify-center mr-5 font-bold text-xl shrink-0 shadow-[0_0_14px_rgba(244,114,182,0.35)]">
                     3
                   </div>
                   <div>
@@ -265,11 +265,11 @@ export default function Home() {
                     </p>
                     <ul className="space-y-2 text-slate-200">
                       <li className="flex items-center">
-                        <Activity className="h-4 w-4 text-emerald-300 mr-2" />
+                        <Activity className="h-4 w-4 text-pink-300 mr-2" />
                         <span>Create a phone-free zone in your bedroom</span>
                       </li>
                       <li className="flex items-center">
-                        <Activity className="h-4 w-4 text-lime-300 mr-2" />
+                        <Activity className="h-4 w-4 text-rose-300 mr-2" />
                         <span>Keep engaging books or activities within easy reach</span>
                       </li>
                     </ul>
