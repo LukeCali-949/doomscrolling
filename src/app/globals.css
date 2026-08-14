@@ -45,37 +45,48 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.12 0.04 330);
-  --foreground: oklch(0.98 0.02 25);
-  --card: oklch(0.18 0.06 330);
-  --card-foreground: oklch(0.98 0.02 25);
-  --popover: oklch(0.18 0.06 330);
-  --popover-foreground: oklch(0.98 0.02 25);
-  --primary: oklch(0.8 0.22 350);
-  --primary-foreground: oklch(0.12 0.04 330);
-  --secondary: oklch(0.24 0.08 335);
-  --secondary-foreground: oklch(0.98 0.02 25);
-  --muted: oklch(0.24 0.04 330);
-  --muted-foreground: oklch(0.86 0.03 20);
-  --accent: oklch(0.79 0.18 352);
-  --accent-foreground: oklch(0.12 0.04 330);
-  --destructive: oklch(0.7 0.23 25);
-  --border: oklch(0.45 0.1 335 / 35%);
-  --input: oklch(0.45 0.1 335 / 45%);
-  --ring: oklch(0.82 0.2 348);
-  --chart-1: oklch(0.78 0.2 350);
-  --chart-2: oklch(0.82 0.18 18);
-  --chart-3: oklch(0.8 0.16 330);
-  --chart-4: oklch(0.75 0.18 345);
-  --chart-5: oklch(0.79 0.2 355);
-  --sidebar: oklch(0.16 0.05 330);
-  --sidebar-foreground: oklch(0.98 0.02 25);
-  --sidebar-primary: oklch(0.8 0.22 350);
-  --sidebar-primary-foreground: oklch(0.12 0.04 330);
-  --sidebar-accent: oklch(0.24 0.08 335);
-  --sidebar-accent-foreground: oklch(0.98 0.02 25);
-  --sidebar-border: oklch(0.45 0.1 335 / 35%);
-  --sidebar-ring: oklch(0.82 0.2 348);
+  --rainbow: linear-gradient(
+    90deg,
+    #ef4444,
+    #f97316,
+    #eab308,
+    #22c55e,
+    #06b6d4,
+    #3b82f6,
+    #8b5cf6,
+    #ec4899
+  );
+  --background: oklch(0.14 0.03 280);
+  --foreground: oklch(0.98 0.01 90);
+  --card: oklch(0.18 0.04 280);
+  --card-foreground: oklch(0.98 0.01 90);
+  --popover: oklch(0.18 0.04 280);
+  --popover-foreground: oklch(0.98 0.01 90);
+  --primary: oklch(0.72 0.19 290);
+  --primary-foreground: oklch(0.14 0.03 280);
+  --secondary: oklch(0.24 0.05 280);
+  --secondary-foreground: oklch(0.98 0.01 90);
+  --muted: oklch(0.24 0.03 280);
+  --muted-foreground: oklch(0.86 0.02 90);
+  --accent: oklch(0.78 0.16 145);
+  --accent-foreground: oklch(0.14 0.03 280);
+  --destructive: oklch(0.68 0.22 25);
+  --border: oklch(0.5 0.08 280 / 35%);
+  --input: oklch(0.5 0.08 280 / 45%);
+  --ring: oklch(0.75 0.18 290);
+  --chart-1: oklch(0.68 0.22 25);
+  --chart-2: oklch(0.78 0.18 70);
+  --chart-3: oklch(0.78 0.18 145);
+  --chart-4: oklch(0.7 0.16 250);
+  --chart-5: oklch(0.7 0.2 310);
+  --sidebar: oklch(0.16 0.04 280);
+  --sidebar-foreground: oklch(0.98 0.01 90);
+  --sidebar-primary: oklch(0.72 0.19 290);
+  --sidebar-primary-foreground: oklch(0.14 0.03 280);
+  --sidebar-accent: oklch(0.24 0.05 280);
+  --sidebar-accent-foreground: oklch(0.98 0.01 90);
+  --sidebar-border: oklch(0.5 0.08 280 / 35%);
+  --sidebar-ring: oklch(0.75 0.18 290);
 }
 
 .dark {
@@ -119,27 +130,62 @@
   body {
     @apply bg-background text-foreground;
     background-image:
-      radial-gradient(circle at top left, rgba(244, 114, 182, 0.26), transparent 30%),
-      radial-gradient(circle at top right, rgba(236, 72, 153, 0.2), transparent 28%),
-      radial-gradient(circle at center, rgba(251, 191, 36, 0.1), transparent 34%),
-      linear-gradient(135deg, #160716 0%, #250b26 34%, #180820 66%, #09030a 100%);
+      radial-gradient(circle at 8% 12%, rgba(239, 68, 68, 0.22), transparent 28%),
+      radial-gradient(circle at 28% 8%, rgba(249, 115, 22, 0.16), transparent 26%),
+      radial-gradient(circle at 50% 0%, rgba(234, 179, 8, 0.12), transparent 30%),
+      radial-gradient(circle at 72% 10%, rgba(34, 197, 94, 0.14), transparent 26%),
+      radial-gradient(circle at 92% 18%, rgba(59, 130, 246, 0.2), transparent 30%),
+      radial-gradient(circle at 88% 80%, rgba(139, 92, 246, 0.18), transparent 32%),
+      radial-gradient(circle at 12% 85%, rgba(236, 72, 153, 0.16), transparent 28%),
+      linear-gradient(160deg, #0b0714 0%, #120a1c 42%, #071018 72%, #07060d 100%);
     background-attachment: fixed;
   }
 }
 
+@keyframes rainbow-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
 .rainbow-text {
-  background: linear-gradient(
+  background-image: linear-gradient(
     90deg,
-    #fda4af 0%,
-    #fb7185 18%,
-    #f472b6 40%,
-    #ec4899 62%,
-    #db2777 82%,
-    #f9a8d4 100%
+    #ef4444,
+    #f97316,
+    #eab308,
+    #22c55e,
+    #06b6d4,
+    #3b82f6,
+    #8b5cf6,
+    #ec4899,
+    #ef4444
   );
+  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  animation: rainbow-shift 8s linear infinite;
+}
+
+.rainbow-bar {
+  background-image: linear-gradient(
+    90deg,
+    #ef4444,
+    #f97316,
+    #eab308,
+    #22c55e,
+    #06b6d4,
+    #3b82f6,
+    #8b5cf6,
+    #ec4899,
+    #ef4444
+  );
+  background-size: 200% auto;
+  animation: rainbow-shift 8s linear infinite;
 }
 
 .rainbow-border {
@@ -155,13 +201,18 @@
   border-radius: inherit;
   background: linear-gradient(
     90deg,
-    #f9a8d4,
-    #fb7185,
-    #f472b6,
+    #ef4444,
+    #f97316,
+    #eab308,
+    #22c55e,
+    #06b6d4,
+    #3b82f6,
+    #8b5cf6,
     #ec4899,
-    #db2777,
-    #fda4af
+    #ef4444
   );
+  background-size: 200% auto;
+  animation: rainbow-shift 8s linear infinite;
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -173,12 +224,33 @@
 
 .rainbow-surface {
   background: linear-gradient(
-    135deg,
-    rgba(253, 164, 175, 0.2),
-    rgba(251, 113, 133, 0.18),
-    rgba(244, 114, 182, 0.16),
-    rgba(236, 72, 153, 0.16),
-    rgba(219, 39, 119, 0.2),
-    rgba(251, 207, 232, 0.18)
+    120deg,
+    rgba(239, 68, 68, 0.28),
+    rgba(249, 115, 22, 0.22),
+    rgba(234, 179, 8, 0.18),
+    rgba(34, 197, 94, 0.2),
+    rgba(6, 182, 212, 0.2),
+    rgba(59, 130, 246, 0.24),
+    rgba(139, 92, 246, 0.24),
+    rgba(236, 72, 153, 0.26)
   );
+  background-size: 200% 200%;
+  animation: rainbow-shift 12s linear infinite;
+}
+
+.rainbow-glow {
+  box-shadow:
+    0 0 24px rgba(239, 68, 68, 0.12),
+    0 0 32px rgba(34, 197, 94, 0.08),
+    0 0 40px rgba(59, 130, 246, 0.12),
+    0 0 28px rgba(236, 72, 153, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rainbow-text,
+  .rainbow-bar,
+  .rainbow-border::before,
+  .rainbow-surface {
+    animation: none;
+  }
 }
